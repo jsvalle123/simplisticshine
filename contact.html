@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="style.css" type="text/css" />
+         <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+       />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"</link>
+     <title>June AA Cleaning</title>
+ </head>
+ <nav class="navbar sticky-top">
+  <a class="logo" href="index.html">
+    <img src="./assets/Logo.png" class="img-fluid" <span class="sr-only"></span>
+  </img></a>
+  <a class="nav-link" href="contact.html">CONTACT<span class="sr-only"></span></a>
+</nav>
+<div class="form-container">
+  
+   <form action="mailto:ecleanerss@gmail.com" method="post" enctype="text/plain" onsubmit="return false">
+    <span>Full Name:</span>
+    <br>
+    <input type="text" placeholder="Enter your full name" id="fullName" />
+    <br><br>
+    <span>Email:</span>
+    <br>
+    <input type="email" placeholder="Enter your email" id="email" />
+    <br><br>
+    <span>What is your question?</span>
+    <br>
+    <textarea id="question" rows="4"></textarea>
+    <br><br>
+    <button class="submit" onclick="sendContact();">Submit</button>
+   </form>
+   </div>
+<footer class="footer-container">
+   <div style="text-align: center;"><img src="./assets/Logo.png" class="footer-logo" href="index.html" </img></div>
+</footer>
+<script src="locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
