@@ -15,6 +15,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"</link>
      <title>June AA Cleaning</title>
  </head>
+ <body>
  <nav class="navbar sticky-top">
   <a class="logo" href="index.html">
     <img src="./assets/Logo.png" class="img-fluid" <span class="sr-only"></span>
@@ -22,29 +23,33 @@
   <a class="nav-link" href="contact.html">CONTACT<span class="sr-only"></span></a>
 </nav>
 <div class="form-container">
-  
-   <form action="mailto:ecleanerss@gmail.com" method="post" enctype="text/plain" onsubmit="return false">
-    <span>Full Name:</span>
-    <br>
-    <input type="text" placeholder="Enter your full name" id="fullName" />
-    <br><br>
-    <span>Email:</span>
-    <br>
-    <input type="email" placeholder="Enter your email" id="email" />
-    <br><br>
-    <span>What is your question?</span>
-    <br>
-    <textarea id="question" rows="4"></textarea>
-    <br><br>
-    <button class="submit" onclick="sendContact();">Submit</button>
-   </form>
-   </div>
+  <form id="myForm" onsubmit="return false">
+    <div class="center-text">
+  <span class="contact_title">Send Us A Message!</span>
+    </div>
+  <br><br>
+  <input type="hidden" name="contact_number">
+  <span>Full Name:</span>
+  <br>
+  <input type="text" placeholder="Enter your full name" id="fullName" />
+  <br><br>
+  <span>Email:</span>
+  <br>
+  <input type="email" placeholder="Enter your email" id="email" />
+  <br><br>
+  <span>What is your question?</span>
+  <br>
+  <textarea id="question" rows="4"></textarea>
+  <br><br>
+  <div class="center">
+  <input id="button" type="submit" value="SEND">
+  </div>
+ </form>
+ </div>
 <footer class="footer-container">
    <div style="text-align: center;"><img src="./assets/Logo.png" class="footer-logo" href="index.html" </img></div>
 </footer>
-<script src="locomotive-scroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+<script src="contact.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
