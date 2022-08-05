@@ -5,7 +5,7 @@ const btn = document.getElementById('button');
       
         btn.value = 'Sending...';
       
-        const serviceID = 'service_9bx4wq5';
+        const serviceID = 'service_j6seceb';
      
         emailjs.sendForm(serviceID,'template_wi6wdwa', '#myForm', '3_8uct6JOitKDwm5z', this)
          .then(() => {
