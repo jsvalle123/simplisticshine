@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+    font-size: 10px;
+    --heading-height: 30em;
+}
+
+body{
+    font-family: "Roboto", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #FFF6EA;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: var(--heading-height);
+}
+header ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 6em;
+    width: 100%;
+    height: calc(var(--heading-height) + 10em);
+    z-index: -1;
+    transform: skewY(-3.5deg);
+    background: linear-gradient(rgba(176, 129, 91, 0.739), rgba(164, 133, 113, 0.733)),
+    url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center, linear-gradient(#F7ECDE, #DAC5AC);
+    background-size: cover;
+    border-bottom: .2em solid #fff;
+}
+h1 {
+  font-size: calc(1.2em + 1.2vw);
+  font-weight: 600;
+  letter-spacing: .07em;
+  padding: 10rem 0 0 4.5rem;
+  text-shadow: .022em .022em .022em #DAC5AC;
+  color: burlywood;
+
+}
+
+main {
+  padding: calc(var(--heading-height) + 1.5vw) 4em 0;
+}
+.nav-link {
+  color: burlywood !important;
+}
+.logo {
+  width: 82px;
+  height: 78px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 0px;
+ }
+.nav-link {
+  color: burlywood;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #fff6ea;
+  height: 80px;
+}
+.contact_title {
+  font-size: 26px;
+}
+.review {
+  background: rgb(212, 192, 165);
+  height: auto;
+  width: 270px;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px #b38e59;
+  align-items: center;
+}
+.reviewItems {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  padding: 10px;
+  align-items: center;
+}
+.reviewItems img {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px;
+}
+.reviewItems h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+.reviewItems p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.reviewButton {
+  text-align: center;
+  padding: 10px;
+}
+.reviewButton button {
+  color: rgb(183, 148, 128);
+  background: #DAC5AC;
+  font-weight: bold;
+}
+.reviewItems{
+  display: none;
+}
+
+.footer-container {
+  width: 100%;
+  height: 135px;
+  justify-content: center;
+  background-color: #fff6ea;
+  color: whitesmoke;
+}
+.footer-logo {
+  width: 130px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}

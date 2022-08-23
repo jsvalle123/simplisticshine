@@ -7,25 +7,27 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5rem;
-    padding: 25px 5vw;
+    grid-gap: 10rem;
+    padding: 25px 4vw;
     max-width: auto;
     margin: auto;
     place-items: center;
 }
 
 img {
-    width: 100%;
-    max-height: 80vh;
+    width: 130%;
+    max-height: 100vh;
     object-fit: contain;
     
 }
-
+.nav-link {
+  color: burlywood !important;
+}
 h1 {
     display: flex;
     font-size: 4rem;
