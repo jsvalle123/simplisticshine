@@ -165,8 +165,8 @@ html.has-scroll-smooth {
     }
 
    .logo {
-    width: 82px;
-    height: 78px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
@@ -188,15 +188,15 @@ html.has-scroll-smooth {
 
    .footer-container {
     width: 100%;
-    height: 135px;
+    height: 175px;
     justify-content: center;
     background-color: #FFF6EA;
     color: whitesmoke;
 }
  .footer-logo{
-    width: 130px;
-    height: 135px;
-    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border-radius: 20%;
     overflow: hidden;
     text-align: center;
     
