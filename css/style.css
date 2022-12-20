@@ -28,7 +28,7 @@ img {
   object-fit: contain;
 }
 .nav-link {
-  color: burlywood !important;
+  color: whitesmoke !important;
 }
 h1 {
   display: flex;
@@ -196,7 +196,7 @@ html.has-scroll-dragging {
 }
 
 nav {
-  background-color: #fff6ea;
+  background-color: #f3d6cd;
   height: 100px;
 }
 .contact_title {
