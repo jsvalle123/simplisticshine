@@ -1,29 +1,17 @@
-let rev = 0;
-carousel(rev);
-function previousReview() {
-    rev = rev - 1;
-    carousel(rev);
-}
+let revIndex = 0;
+showReviews();
 
-function nextReview() {
-    rev = rev + 1;
-    carousel(rev);
-}
-
-function carousel(review) {
+function showReviews() {
+    let i;
     let reviews = document.getElementsByClassName("reviewItems");
-
-    if(review >= reviews.length) {
-        review=0;
-        rev=0;
+    for(i = 0; i < reviews.length; i++){
+        reviews[i].getElementsByClassName.display = "none";
     }
-    if(review<0) {
-        review = reviews.length-1;
-        rev = reviews.length-1;
+    revIndex++;
+    if (revIndex > reviews.length) {
+        revIndex = 1
     }
-    for(let i = 0; i < reviews.length; i++) {
-        reviews[i].style.display = "none";
-    }
-    reviews[review].style.display="block";
+    reviews[revIndex - 1].style.display = "block";
+    setTimeout(showReviews, 5000);
 }
 
