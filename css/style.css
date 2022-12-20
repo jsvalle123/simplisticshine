@@ -62,7 +62,7 @@ h2 {
   justify-content: center;
   width: 50%;
   height: 50px;
-  background-color: burlywood;
+  background-color: #ff9a8a;
   color: whitesmoke;
   font-size: 24px;
   font-weight: bold;
@@ -213,8 +213,9 @@ nav {
 }
 .footer-logo {
   width: 160px;
+  margin-top: 15;
   height: 160px;
-  border-radius: 20%;
+  border-radius: 50%;
   overflow: hidden;
   text-align: center;
 }
