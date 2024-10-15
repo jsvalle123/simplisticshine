@@ -1,57 +1,81 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <link rel="stylesheet" href="css/style.css" type="text/css" />
-         <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-       />
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"</link>
-     <title>Simplistic Shine</title>
-     <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
- </head>
- <body>
- <nav class="navbar sticky-top">
-  <a class="logo" href="index.html">
-    <img src="./assets/SimplisticShine.png" class="img-fluid" <span class="sr-only"></span>
-  </img></a>
-  <a class="nav-link" href="contact.html">CONTACT<span class="sr-only"></span></a>
- <!-- <a class="nav-link" href="reviews.html">REVIEWS<span class="sr-only"></span></a>  -->
-</nav>
-<div class="form-container">
-  <form id="myForm" onsubmit="return false">
-    <div class="center-text">
-  <span class="contact_title">Send Us A Message!</span>
-    </div>
-  <br><br>
-  <input type="hidden" name="contact_number">
-  <span>Full Name:</span>
-  <br>
-  <input type="text" name="from_name" placeholder="Enter your full name" id="fullName" />
-  <br><br>
-  <span>Email:</span>
-  <br>
-  <input type="email" name="reply_to" placeholder="Enter your email" id="email" />
-  <br><br>
-  <span>Get your quote now! We're happy to answer any questions you may have!</span>
-  <br>
-  <textarea id="question" name="message" rows="4"></textarea>
-  <br><br>
-  <div class="center">
-  <input id="button" type="submit" value="SEND">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <title>Contact Us - Simplistic Shine</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar sticky-top">
+    <a class="logo" href="index.html">
+      <img src="./assets/SimplisticShine.png" class="img-fluid" alt="Simplistic Shine Logo">
+    </a>
+    <a class="nav-link contact-btn" href="contact.html">CONTACT</a>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <div class="form-container animate__animated animate__fadeInUp">
+    <form id="myForm" onsubmit="return false">
+      <div class="center-text">
+        <span class="contact_title">Send Us A Message!</span>
+      </div>
+      <br>
+      <input type="hidden" name="contact_number">
+      <label for="fullName">Full Name:</label>
+      <input type="text" name="from_name" placeholder="Enter your full name" id="fullName" class="input-field">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="reply_to" placeholder="Enter your email" id="email" class="input-field">
+      <br>
+      <label for="question">Get your quote now! We're happy to answer any questions you may have:</label>
+      <textarea id="question" name="message" rows="4" class="textarea-field"></textarea>
+      <br>
+      <div class="center">
+        <input id="button" type="submit" value="SEND" class="submit-btn animate__animated animate__pulse">
+      </div>
+    </form>
   </div>
- </form>
- </div>
-<footer class="footer-container">
-   <div style="text-align: center;"><img src="./assets/SimplisticShine.png" class="footer-logo" href="index.html" </img></div>
-</footer>
-<script src="javascript/contact.js"></script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Success Modal (Hidden by Default) -->
+  <div id="successModal" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+      <span class="close-btn">&times;</span>
+      <h2>Thank You!</h2>
+      <p>Your message has been sent successfully. We'll get back to you soon!</p>
+
+    </div>
+
+  </div>
+  <!-- Error Modal (Hidden by Default) -->
+  <div id="errorModal" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+      <span class="close-btn">&times;</span>
+      <h2>Form Incomplete</h2>
+      <p>Please fill in all the fields before submitting the form.</p>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer-container">
+    <img src="./assets/SimplisticShine.png" style="text-align: center;" class="footer-logo" alt="Simplistic Shine Logo">
+  </footer>
+
+  <script src="javascript/contact.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </body>
+
 </html>

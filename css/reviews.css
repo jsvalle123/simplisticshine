@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   color: var(--text-color);
   background: var(--bg-color);
   transition: 0.3s ease-out;
@@ -12,16 +12,16 @@ body {
   flex-direction: column;
 }
 .nav-link {
-color: burlywood !important;
+  color: burlywood !important;
 }
 h1 {
   display: flex;
   font-size: 4rem;
-  z-index:3;
+  z-index: 3;
   line-height: 1.2;
   font-weight: 500;
   @media (max-width: 768px) {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 h2 {
@@ -34,25 +34,25 @@ h2 {
   position: relative;
   margin: auto;
 }
-.reviewItems{
+.reviewItems {
   align-items: center;
   justify-content: space-evenly;
   width: 250px;
   padding: 10px;
   align-items: center;
 }
-.reviewItems img{
+.reviewItems img {
   height: 250px;
   width: 250px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px;
 }
 .reviewItems h1 {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 20px;
 }
 .reviewItems p {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 14px;
 }
 .prev,
@@ -70,15 +70,15 @@ h2 {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.next{
-  right:0;
+.next {
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 .prev:hover,
-.next:hover{
-  background-color: rgba(0,0,0,0.8);
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.dot{
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -89,10 +89,10 @@ h2 {
   transition: background-color 0.6s ease;
 }
 .active,
-.dot:hover{
+.dot:hover {
   background-color: #111111;
 }
-.fade{
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -100,18 +100,18 @@ h2 {
 }
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -126,26 +126,25 @@ span {
   color: whitesmoke;
 }
 
-
- .logo {
+.logo {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   overflow: hidden;
   margin-top: -6px;
   margin-bottom: -6px;
- }
- 
- .nav-link{
+}
+
+.nav-link {
   color: burlywood;
   font-size: 20px;
- }
+}
 
- nav {
-  background-color:#FFF6EA;
+nav {
+  background-color: #fff6ea;
   height: 80px;
- }
-
+}
+/* 
 
  .footer-container {
   width: 100%;
@@ -160,7 +159,6 @@ span {
   height: 160px;
   border-radius: 20%;
   overflow: hidden;
-  text-align: center;
-  
+  text-align: center; */
 
-}
+/* } */

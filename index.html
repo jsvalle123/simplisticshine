@@ -1,52 +1,145 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <link rel="stylesheet" href="css/style.css" type="text/css" />
-         <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-       />
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"</link>
-     <title>Simplistic Shine</title>
-     <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
- </head>
- <nav class="navbar sticky-top">
-  <a class="logo" href="index.html">
-    <img src="./assets/SimplisticShine.png" class="img-fluid" <span class="sr-only"></span>
-  </img></a>
-  <a class="nav-link" href="contact.html">CONTACT<span class="sr-only"></span></a>
-<!-- <a class="nav-link" href="reviews.html">REVIEWS<span class="sr-only"></span></a> -->
-</nav>
-<div class="container">
-    <section data-scroll data-bgcolor="#f3d6cd" data-textcolor="#fff">
-      <h1 data-scroll data-scroll-speed="3">Simplistic Shine, Lets Declutter For The Shine! </h1>
-      <img src="assets/product.jpeg" alt="personcleaning">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <title>Simplistic Shine</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+</head>
+
+<body>
+  <nav class="navbar sticky-top">
+    <a class="logo" href="index.html">
+      <img src="./assets/SimplisticShine.png" class="img-fluid" alt="Simplistic Shine Logo">
+    </a>
+    <a class="nav-link contact-btn" href="contact.html">CONTACT</a>
+  </nav>
+
+  <!-- Desktop View Container -->
+  <div class="container desktop-view">
+    <!-- Section 1: Introduction (Image Centered) -->
+    <section class="intro-section gs-reveal" data-scroll data-bgcolor="#F3D6CD" data-textcolor="#333333">
+      <div class="section-content centered-layout">
+        <div>
+          <h1>Leave the Mess Behind – Simplistic Shine for Move-Out Cleaning</h1>
+          <p>We specialize in move-in and move-out cleaning services, ensuring that your space is spotless and ready for
+            the next chapter. Leave the cleaning to us and start fresh with confidence!</p>
+        </div>
+        <img src="assets/clean.png" alt="Person cleaning" class="hover-scale" id="center-img">
+      </div>
     </section>
-    <section data-bgcolor="#f0d5da" data-textcolor="##ff9a8a"><img src="./assets/wiping.jpeg" alt="kitchenclean">
-      <h2 data-scroll data-scroll-speed="1">Let us help YOU maintain your home looking PRISTINE.</h2>
+
+    <!-- Section 2: Move-In Cleaning (Image on Left) -->
+    <section class="gs-reveal" data-bgcolor="#F7E4E3" data-textcolor="#333333">
+      <div class="section-content reverse-layout">
+        <img src="./assets/wiping.jpeg" alt="Move-In Cleaning" class="hover-scale">
+        <div>
+          <h2>Welcome to Your New Home</h2>
+          <p>Our move-in cleaning service ensures that your new space is clean, sanitized, and ready for you to settle
+            in. Experience the comfort of a fresh start with a home that shines.</p>
+        </div>
+      </div>
     </section>
-    <section data-bgcolor="#f8eaec" data-textcolor="#de9dac"><img src="./assets/clean.jpeg" alt="clean">
-      <h2 data-scroll data-scroll-speed="1">A tidy home, makes for a happy life. Click the button below get a quote and ask any questions!</h2>
+
+    <!-- Section 3: Move-Out Cleaning (Image on Right) -->
+    <section class="gs-reveal" data-bgcolor="#FAF3F1" data-textcolor="#2C3E50">
+      <div class="section-content">
+        <div>
+          <h2>Leave Without a Trace</h2>
+          <p>Moving out? Let us handle the deep cleaning. We ensure that your space is left spotless, helping you meet
+            move-out requirements and leave a positive impression behind.</p>
+        </div>
+        <img src="./assets/clean.jpeg" alt="Move-Out Cleaning" class="hover-scale">
+      </div>
     </section>
-    <section data-bgcolor="#f8eaec" data-textcolor="#ca7b80"><img src="assets/boxes.jpeg" alt="boxes">
-      <h2 data-scroll data-scroll-speed="1">We also provide assistance with moving out, consisting of packing and cleaning.</h2>
+
+    <!-- Section 4: Ongoing Maintenance (Image on Left) -->
+    <section class="gs-reveal" data-bgcolor="#FFF9F8" data-textcolor="#4A4A4A">
+      <div class="section-content reverse-layout">
+        <img src="assets/boxes.jpeg" alt="Maintenance Services" class="hover-scale">
+        <div>
+          <h2>Keep Your Home Pristine</h2>
+          <p>Our ongoing maintenance services ensure your space remains clean and well-maintained. Perfect for keeping
+            your new home in top shape or preparing a property for new tenants.</p>
+        </div>
+      </div>
+      <!-- Call to Action Button at the End -->
+      <div class="center">
+        <button class="bn" onclick="document.location='contact.html'">Get a Quote!</button>
+      </div>
     </section>
-    <div class="center">
-    <button class="bn" onclick="document.location='contact.html'"button">Get a Quote!</button>
-    </div>
   </div>
+
+  <!-- Mobile View Container -->
+  <div class="container mobile-view">
+    <section class="intro-section gs-reveal" data-scroll data-bgcolor="#F3D6CD" data-textcolor="#333333">
+      <div class="section-content centered-layout">
+        <div>
+          <h1>Leave the Mess Behind – Simplistic Shine for Move-Out Cleaning</h1>
+          <p>We specialize in move-in and move-out cleaning services, ensuring that your space is spotless and ready for
+            the next chapter. Leave the cleaning to us and start fresh with confidence!</p>
+        </div>
+        <img src="assets/clean.png" alt="Person cleaning" class="hover-scale" id="center-img">
+      </div>
+    </section>
+    <!-- Stacked Section 1: Move-In Cleaning -->
+    <section class="intro-section gs-reveal" data-bgcolor="#F7E4E3" data-textcolor="#333333">
+      <div class="section-content-mobile">
+        <img src="./assets/wiping.jpeg" alt="Move-In Cleaning" class="hover-scale">
+        <div>
+          <h2>Welcome to Your New Home</h2>
+          <p>Our move-in cleaning service ensures that your new space is clean, sanitized, and ready for you to settle
+            in. Experience the comfort of a fresh start with a home that shines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stacked Section 2: Move-Out Cleaning -->
+    <section class="gs-reveal" data-bgcolor="#FAF3F1" data-textcolor="#2C3E50">
+      <div class="section-content-mobile">
+        <img src="./assets/clean.jpeg" alt="Move-Out Cleaning" class="hover-scale">
+        <div>
+          <h2>Leave Without a Trace</h2>
+          <p>Moving out? Let us handle the deep cleaning. We ensure that your space is left spotless, helping you meet
+            move-out requirements and leave a positive impression behind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stacked Section 3: Ongoing Maintenance -->
+    <section class="gs-reveal" data-bgcolor="#FFF9F8" data-textcolor="#4A4A4A">
+      <div class="section-content-mobile">
+        <img src="assets/boxes.jpeg" alt="Maintenance Services" class="hover-scale">
+        <div>
+          <h2>Keep Your Home Pristine</h2>
+          <p>Our ongoing maintenance services ensure your space remains clean and well-maintained. Perfect for keeping
+            your new home in top shape or preparing a property for new tenants.</p>
+        </div>
+      </div>
+      <!-- Call to Action Button at the End -->
+      <div class="center">
+        <button class="bn" onclick="document.location='contact.html'">Get a Quote!</button>
+      </div>
+    </section>
+  </div>
+
   <footer class="footer-container">
-    <div style="text-align: center;"><img src="./assets/Logo.svg" class="footer-logo" href="index.html" </img></div>
- </footer>
- <script src="locomotive-scroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="javascript/script.js"></script>
+    <div style="text-align: center;">
+      <img src="./assets/SimplisticShine.png" class="footer-logo" alt="Simplistic Shine Logo">
+    </div>
+  </footer>
+
+  <script src="locomotive-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
+
 </html>
