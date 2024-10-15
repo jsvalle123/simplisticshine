@@ -1,2 +1,2 @@
-# JuneAACleaning
+# SimplisticShine
 Website for cleaning company
